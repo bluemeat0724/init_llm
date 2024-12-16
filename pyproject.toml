@@ -33,7 +33,7 @@ classifiers = [
 init_llm = ["model_providers.toml", ".env.template"]
 
 [project.urls]
-Homepage = "https://github.com/username/init-llm"
-Documentation = "https://github.com/username/init-llm#readme"
-Repository = "https://github.com/username/init-llm.git"
+Homepage = "https://github.com/bluemeat0724/init_llm"
+Documentation = "https://github.com/bluemeat0724/init_llm#readme"
+Repository = "https://github.com/bluemeat0724/init_llm.git"
 
