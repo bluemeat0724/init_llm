@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "init-llm"
-version = "0.1.0"
+version = "0.1.1"
 description = "A toolkit for initializing LLMs and embeddings with multiple providers"
 authors = [{name = "G", email = "wangrenyuan@outlook.com"}]
 readme = {file = "README.md", content-type = "text/markdown"}

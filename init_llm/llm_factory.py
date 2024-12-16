@@ -58,7 +58,7 @@ class BaseLLM:
                 except Exception as e:
                     print(f"Warning: Could not create {env_file}. Error: {str(e)}")
                     load_dotenv()
-            return toml.load(local_path,override=True)
+            return toml.load(local_path)
         
         # If not found, create from package resources
         try:
