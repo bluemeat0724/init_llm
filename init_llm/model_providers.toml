@@ -1,5 +1,5 @@
 [providers]
-names = ['openai', 'moon', 'qwen', 'zhipu', 'yi', 'step', 'azure', 'intern', 'ollama', 'deepseek', 'groq', 'openrouter', 'sambanova', 'tencent']
+names = ['openai', 'moon', 'qwen', 'zhipu', 'yi', 'step', 'azure', 'intern', 'ollama', 'deepseek', 'tencent', 'groq', 'openrouter', 'sambanova']
 
 [openai]
 doc_url = 'https://platform.openai.com/docs/overview'
@@ -18,7 +18,7 @@ base_url = 'https://api.moonshot.cn/v1'
 
 [qwen]
 doc_url = 'https://help.aliyun.com/zh/dashscope/?spm=a2c4g.11186623.0.0.4780fa701KqDuP'
-models = ['qwen-max', 'qwen-max-longcontext', 'qwen-vl-max', 'qwen-vl-plus', 'qwen2-72b-instruct', 'qwen1.5-72b-chat']
+models = ['qwen-max', 'qwen-plus', 'qwen-max-longcontext', 'qwen-vl-max', 'qwen-vl-plus', 'qwen2-72b-instruct', 'qwen1.5-72b-chat']
 embeddings = ['text-embedding-v2']
 base_url = 'https://dashscope.aliyuncs.com/compatible-mode/v1'
 
@@ -27,9 +27,8 @@ models = ['glm-4-plus', 'glm-4-0520', 'glm-4-airx', 'glm-4-air', 'glm-4-long', '
 pricing = [50.0, 100.0, 10.0, 1.0, 1.0, 1.0, 0.1]
 embeddings = ['embedding-2']
 base_url = 'https://open.bigmodel.cn/api/paas/v4/'
-doc_url = 'https://maas.aminer.cn/dev/api'
+doc_url = 'https://bigmodel.cn/dev/howuse/model'
 pricing_doc_url = 'https://open.bigmodel.cn/pricing'
-
 
 [yi]
 doc_url = 'https://platform.lingyiwanwu.com/docs'
@@ -45,23 +44,28 @@ models = ['deepseek-chat']
 pricing = [1]
 base_url = 'https://api.deepseek.com'
 
+[tencent]
+doc_url = 'https://cloud.tencent.com/document/product/1729/111007'
+models = ['hunyuan-large', 'hunyuan-turbo-latest', 'hunyuan-pro', 'hunyuan-turbo-vision', 'hunyuan-vision']
+base_url = 'https://cloud.tencent.com/document/product/1729/104753'
+
 [grok]
-doc_url='https://docs.x.ai/docs'
+doc_url = 'https://docs.x.ai/docs'
 models = ['grok-beta']
-base_url='https://api.x.ai/v1'
+base_url = 'https://api.x.ai/v1'
 
 [silicon]
 doc_url = 'https://docs.siliconflow.cn/docs/getting-started'
-models = ['Qwen/Qwen2.5-72B-Instruct','Qwen/Qwen2.5-72B-Instruct-128K', 'google/gemma-2-27b-it', 'deepseek-ai/DeepSeek-V2-Chat', '01-ai/Yi-1.5-34B-Chat-16K', 'deepseek-ai/DeepSeek-V2-Chat']
-pricing=[4.13,4.13]
+models = ['Qwen/Qwen2.5-72B-Instruct', 'Qwen/Qwen2.5-72B-Instruct-128K', 'google/gemma-2-27b-it', 'deepseek-ai/DeepSeek-V2-Chat', '01-ai/Yi-1.5-34B-Chat-16K', 'deepseek-ai/DeepSeek-V2-Chat']
+pricing = [4.13, 4.13]
 embeddings = ['netease-youdao/bce-embedding-base_v1']
-reranker=['netease-youdao/bce-reranker-base_v1','BAAI/bge-reranker-v2-m3']
+reranker = ['netease-youdao/bce-reranker-base_v1', 'BAAI/bge-reranker-v2-m3']
 base_url = 'https://api.siliconflow.cn/v1'
 
 [step]
 doc_url = 'https://platform.stepfun.com/docs/overview/concept'
-models = ['step-2-16k','step-1-8k', 'step-1v-8k', 'step-1v-32k', 'step-1-32k', 'step-1-128k', 'step-256k']
-pricing=[38,5,5,15,15,40,95]
+models = ['step-2-16k', 'step-1-8k', 'step-1v-8k', 'step-1v-32k', 'step-1-32k', 'step-1-128k', 'step-256k']
+pricing = [38, 5, 5, 15, 15, 40, 95]
 base_url = "https://api.stepfun.com/v1"
 
 [azure]
@@ -80,7 +84,6 @@ base_url = "https://internlm-chat.intern-ai.org.cn/puyu/api/v1/"
 doc_url = 'https://internlm.intern-ai.org.cn/api/document'
 models = ['qwen:14b-chat', 'qwen2:7b-instruct-q8_0', 'gemma2:9b-instruct-q8_0']
 base_url = "http://localhost:11434/v1"
-
 
 [groq]
 models = ['llama-3.1-70b-versatile', 'llama-3.1-8b-instant', 'gemma2-9b-it']
@@ -102,11 +105,6 @@ base_url = 'https://api.deepbricks.ai/v1'
 models = ['Meta-Llama-3.1-405B-Instruct']
 doc_url = 'https://cloud.sambanova.ai/apis'
 base_url = 'https://api.sambanova.ai/v1'
-
-[tencent]
-models = ['hunyuan-pro', 'hunyuan-turbo-latest', 'hunyuan-standard-256K', 'hunyuan-standard', 'hunyuan-lite', 'hunyuan-functioncall']
-doc_url = 'https://cloud.tencent.com/document/product/1729/104753'
-base_url = 'https://api.hunyuan.cloud.tencent.com/v1'
 
 [anthropic]
 model_name = "claude-3-sonnet-20240229"
